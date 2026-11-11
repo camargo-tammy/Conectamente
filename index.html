@@ -19,7 +19,7 @@
             <p>Espaço seguro para encontrar escuta, acolhimento e contatos de emergência.</p>
         </section>
 
-        <!-- Secção de Emergência -->
+        <!-- 1. Apoio de Emergência -->
         <section class="card-emergencia">
             <h3>🆘 Apoio Emocional Imediato</h3>
             <p>O <strong>CVV (Centro de Valorização da Vida)</strong> realiza apoio emocional gratuito 24h por dia.</p>
@@ -27,22 +27,46 @@
             <a href="https://www.cvv.org.br" target="_blank" class="btn btn-cvv">Acessar Chat do CVV</a>
         </section>
 
-        <!-- Secção do Chat Virtual com IA -->
+        <!-- 2. Chat Virtual de Acolhimento -->
         <section class="card-interativo">
             <h3>🤖 Assistente de Acolhimento Virtual</h3>
-            <p class="subtitulo-chat">Converse com nosso assistente para receber orientações de autocuidado e escuta inicial.</p>
+            <p class="subtitulo-chat">Converse com nosso assistente para receber orientações de autocuidado.</p>
             
             <div id="chat-messages" class="chat-box">
                 <div class="msg-chat bot-msg">
                     <strong>Assistente ConectaMente:</strong> 
-                    <span class="msg-texto">Olá! Estou aqui para escutar você e compartilhar dicas de bem-estar. Como você está se sentindo hoje?</span>
+                    <span class="msg-texto">Olá! Estou aqui para escutar você. Como você está se sentindo hoje?</span>
                 </div>
             </div>
 
             <form id="chat-form" class="chat-form-container">
-                <input type="text" id="chat-input" placeholder="Digite sua mensagem aqui..." required>
+                <input type="text" id="chat-input" placeholder="Digite como se sente..." required>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+        </section>
+
+        <!-- 3. Respiração Guiada -->
+        <section class="card-interativo">
+            <h3>🧘 Respiração Guiada (Alívio de Ansiedade)</h3>
+            <p>Faça uma pausa e acalme sua mente com este exercício rápido.</p>
+            <div id="timer-respiracao" class="timer-box">Clique no botão para começar</div>
+            <button id="btn-respiracao" class="btn btn-primary">Iniciar Respiração</button>
+        </section>
+
+        <!-- 4. Mural de Apoio Comunitário -->
+        <section class="card-interativo">
+            <h3>💬 Mural de Mensagens de Apoio</h3>
+            <form id="form-apoio" class="chat-form-container">
+                <input type="text" id="mensagem-input" placeholder="Escreva uma palavra positiva para a comunidade..." required>
+                <button type="submit" class="btn btn-primary">Publicar</button>
+            </form>
+
+            <div id="lista-mensagens" class="mural-grid">
+                <div class="card-mensagem-mural">
+                    <p>"Lembre-se: um dia de cada vez. Você é mais forte do que imagina."</p>
+                    <small>— Mensagem da comunidade</small>
+                </div>
+            </div>
         </section>
 
         <footer>
