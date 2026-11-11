@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaMente — Rede de Apoio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💚 ConectaMente</h1>
+            <p>Rede de Apoio e Acolhimento Emocional</p>
+            <button id="theme-toggle" class="btn-theme">🌙 Modo Escuro</button>
+        </header>
+
+        <section class="hero">
+            <h2>Você não precisa passar por isso só.</h2>
+            <p>Espaço seguro para encontrar escuta, acolhimento e contatos de emergência.</p>
+        </section>
+
+        <section class="card-emergencia">
+            <h3>🆘 Apoio Emocional Imediato</h3>
+            <p>O <strong>CVV (Centro de Valorização da Vida)</strong> realiza apoio emocional gratuito 24h por dia.</p>
+            <div class="numero-cvv">📞 188</div>
+            <a href="https://www.cvv.org.br" target="_blank" class="btn btn-cvv">Acessar Chat do CVV</a>
+        </section>
+
+        <section class="card-interativo">
+            <h3>💬 Envie uma Mensagem de Apoio</h3>
+            <form id="form-apoio">
+                <input type="text" id="mensagem-input" placeholder="Escreva uma palavra positiva..." required>
+                <button type="submit" class="btn btn-cvv">Enviar</button>
+            </form>
+            <p id="feedback-mensagem" class="feedback"></p>
+        </section>
+
+        <footer>
+            <p>Projeto educacional open-source • Em emergências médicas ligue para o SAMU (192)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
