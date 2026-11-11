@@ -27,28 +27,22 @@
             <a href="https://www.cvv.org.br" target="_blank" class="btn btn-cvv">Acessar Chat do CVV</a>
         </section>
 
-        <!-- Secção de Respiração Guiada -->
+        <!-- Secção do Chat Virtual com IA -->
         <section class="card-interativo">
-            <h3>🧘 Respiração Guiada (Alívio Rápido)</h3>
-            <p>Sente-se confortavelmente e clique abaixo para iniciar o exercício de relaxamento.</p>
-            <div id="timer-respiracao" class="timer-box">Clique no botão para começar</div>
-            <button id="btn-respiracao" class="btn btn-primary">Iniciar Respiração</button>
-        </section>
-
-        <!-- Secção do Mural de Apoio -->
-        <section class="card-interativo">
-            <h3>💬 Mural de Apoio Comunitário</h3>
-            <form id="form-apoio">
-                <input type="text" id="mensagem-input" placeholder="Escreva uma mensagem positiva para alguém..." required>
-                <button type="submit" class="btn btn-cvv">Publicar</button>
-            </form>
-
-            <div id="lista-mensagens" class="mural-grid">
-                <div class="card-mensagem-mural">
-                    <p>"Lembre-se: um dia de cada vez. Você é mais forte do que imagina."</p>
-                    <small>— Mensagem da comunidade</small>
+            <h3>🤖 Assistente de Acolhimento Virtual</h3>
+            <p class="subtitulo-chat">Converse com nosso assistente para receber orientações de autocuidado e escuta inicial.</p>
+            
+            <div id="chat-messages" class="chat-box">
+                <div class="msg-chat bot-msg">
+                    <strong>Assistente ConectaMente:</strong> 
+                    <span class="msg-texto">Olá! Estou aqui para escutar você e compartilhar dicas de bem-estar. Como você está se sentindo hoje?</span>
                 </div>
             </div>
+
+            <form id="chat-form" class="chat-form-container">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem aqui..." required>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </section>
 
         <footer>
