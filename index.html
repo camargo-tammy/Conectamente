@@ -19,6 +19,7 @@
             <p>Espaço seguro para encontrar escuta, acolhimento e contatos de emergência.</p>
         </section>
 
+        <!-- Secção de Emergência -->
         <section class="card-emergencia">
             <h3>🆘 Apoio Emocional Imediato</h3>
             <p>O <strong>CVV (Centro de Valorização da Vida)</strong> realiza apoio emocional gratuito 24h por dia.</p>
@@ -26,13 +27,28 @@
             <a href="https://www.cvv.org.br" target="_blank" class="btn btn-cvv">Acessar Chat do CVV</a>
         </section>
 
+        <!-- Secção de Respiração Guiada -->
         <section class="card-interativo">
-            <h3>💬 Envie uma Mensagem de Apoio</h3>
+            <h3>🧘 Respiração Guiada (Alívio Rápido)</h3>
+            <p>Sente-se confortavelmente e clique abaixo para iniciar o exercício de relaxamento.</p>
+            <div id="timer-respiracao" class="timer-box">Clique no botão para começar</div>
+            <button id="btn-respiracao" class="btn btn-primary">Iniciar Respiração</button>
+        </section>
+
+        <!-- Secção do Mural de Apoio -->
+        <section class="card-interativo">
+            <h3>💬 Mural de Apoio Comunitário</h3>
             <form id="form-apoio">
-                <input type="text" id="mensagem-input" placeholder="Escreva uma palavra positiva..." required>
-                <button type="submit" class="btn btn-cvv">Enviar</button>
+                <input type="text" id="mensagem-input" placeholder="Escreva uma mensagem positiva para alguém..." required>
+                <button type="submit" class="btn btn-cvv">Publicar</button>
             </form>
-            <p id="feedback-mensagem" class="feedback"></p>
+
+            <div id="lista-mensagens" class="mural-grid">
+                <div class="card-mensagem-mural">
+                    <p>"Lembre-se: um dia de cada vez. Você é mais forte do que imagina."</p>
+                    <small>— Mensagem da comunidade</small>
+                </div>
+            </div>
         </section>
 
         <footer>

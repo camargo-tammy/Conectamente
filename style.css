@@ -96,3 +96,48 @@ body.dark-mode {
     --card-bg: #1e1e1e;
     --primary-light: #1b3320;
 }
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.timer-box {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+    padding: 15px;
+    background: var(--primary-light);
+    border-radius: 8px;
+}
+
+.mural-grid {
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.card-mensagem-mural {
+    background-color: var(--primary-light);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    text-align: left;
+}
+
+.card-mensagem-mural small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+body.dark-mode .card-mensagem-mural {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .timer-box {
+    background-color: #2a2a2a;
+    color: #81c784;
+}
